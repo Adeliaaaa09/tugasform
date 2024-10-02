@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        td:first-child {
+            text-align: right;
+            padding-right: 20px;
+        }
+        td:last-child {
+            text-align: left;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Registrasi</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="firstName">Nama Depan:</label></td>
+                <td><input type="text" id="firstName" name="firstName" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Nama Belakang:</label></td>
+                <td><input type="text" id="lastName" name="lastName" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Alamat:</label></td>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Tanggal Lahir:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Foto:</label></td>
+                <td><input type="file" id="photo" name="photo" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Daftar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
